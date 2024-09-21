@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚦高二物理 电学</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #282A36;
+            padding-top: 60px; /* 根据工具栏的高度调整 */
+            color: #f5f5f5;
+            line-height: 1.6;
+            margin-left: 20px;
+            margin-right: 200px; /* 根据目录宽度调整 */
+            font-family: Arial, sans-serif;
+            counter-reset: section;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* 所有内容左对齐 */
+        }
+        h1, h2, h3 {
+            color: #4592af;
+            margin-left: 370px;
+            white-space: nowrap;
+            margin-top: -10px;   /* 使用负值减少标题与上方内容的间距 */
+            margin-bottom: -25px;  /* 减少标题与下方内容的间距 */
+        }
+        .video-container {
+            display: flex;
+            flex-direction: column; /* 垂直排列视频 */
+            align-items: left;
+            margin-left: 200px; /* 视频容器与上方内容的间距 */
+            margin-bottom: 20px; /* 视频容器与下方内容的间距 */
+      margin-left: 340px;
+    align-items: center; /* 垂直居中 */
+    height: auto; /* 根据内容自适应高度 */
+        }
+        .video-container video {
+            margin-bottom: 20px; /* 视频之间的垂直间距 */
+        }
+
+        #toc {
+            position: fixed;
+            top: 5px;
+            left: 5px;
+            max-height: 90vh; /* 设置最大高度为视口高度的80% */
+        max-width: 45vh;
+            overflow-y: auto; /* 添加垂直滚动条 */
+            background-color: rgba(40, 42, 54, 0.9); /* 半透明背景 */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+        }
+      @media (max-width: 768px) {
+    #toc {
+        position: absolute; /* 在移动设备上使用绝对定位 */
+        top: 10px; /* 距离顶部10px */
+        left: 10px; /* 距离左侧10px */
+        max-width: 90%; /* 最大宽度为90% */
+        width: auto; /* 自适应宽度 */
+        z-index: 1000; /* 确保目录在其他内容之上 */
+    }
+}
+
+        #toc ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            counter-reset: section; /* 重置计数器 */
+        }
+
+        #toc li {
+            counter-increment: section;
+        }
+
+        #toc li::before {
+            content: counter(section) ". ";
+            color: #FF0000;
+        }
+
+        #toc a {
+            color: #4592af;
+            text-decoration: none;
+        }
+
+        #toc a:hover {
+            text-decoration: underline;
+        }
+
+        body > h2 {
+            counter-increment: section;
+        }
+
+        body > h2::before {
+            content: counter(section) ". ";
+            color: #ff461f;
+        }
+      @media (max-width: 768px) {
+  /* 移动设备上的样式 */
+}
+    </style>
+</head>
+<body>
+    <div id="toc">
+        <!--<h2>目录</h2>-->
+        <ul id="toc-list">
+            <!-- 目录项将由JavaScript生成 -->
+        </ul>
+    </div>
+
+<h2 style="text-align: center;">二极管的单向导电</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VWRVVrVFkwX0oxRWlCNW55M0NqUng4QjlNSzBJUlhQTFdUbGRLNnc4UE83YVE_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPXdqTUxMZg.mp4" type="video/mp4">
+            您的浏览器不支持视频标签。
+        </video>
+    </div>
+              
+<h2 style="text-align: center;">二极管的伏安特性</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VhSzBKNUVyZDh0TWxjQUdIWDF5LVR3QktQbVB0bzlCNTZEamV5VGlGd3NjYVE_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPXdCTGdWZw.mp4" type="video/mp4">
+          </video>
+          </div>
+              
+<h2 style="text-align: center;">十分鐘电子电路</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VSSm1mYzRqanJSSXJqdlpYSy1LM25zQk01WEhycHhRdmt3TXRzdHZoN2dYeGc_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPWJhUWpiRw.mp4" type="video/mp4">
+          </video>
+          </div>
+              
+<h2 style="text-align: center;">两个开关控制一盏灯</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VUZi1zc2tESWI5SWhrSWZHUHctdmU4Qm1Wbnl6bFB2cWxoU1o4T3BSUF9BT2c_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPTZjSkpSMA.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">8种基础电路</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VYNEJpOEFYcm1STnBud0FjWlZESEJNQnpWdFBpaFNXdTdMcEU2Y1Etd1B2dnc_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPWtjdXdVSg.mp4" type="video/mp4">
+          </video>
+          </div>
+              
+<h2 style="text-align: center;">把DIY電池組需要知道的都說清楚</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VaX0NabFVwT250T3FIN0FDUG9rWHVnQlZlTUhqbjlObmxLR096ZUdzUXB6enc_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPUxaTjRtNg.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">直流电如何变为交流电</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VZUmpWR2FBbWNsSnFrbUgyWHZ3MGNRQnhRMnVCT1o3RzVnM2JpdXJMSGpsbXc_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPXVNbU5KTA.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">蚊子为什么能在时速300公里的高铁里正常飞</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VVUEJ1Ul83SkhGQ3VZZnRTSFBpY2NnQjFROGJNTTJVdUV2SElhcEcyRVhOdVE_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPUNYaTU4ZQ.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">电池的电压</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VjYkxHcjZMQmd0TnRLYWpHNk80LTBnQlZKelRfcHpsaWhYUHpxNU45U0dERnc_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPWJBZTk3NA.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">开关</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VVSldyOEVLMktoTHFfbzlyRHY0WjFnQlNTR2tGVVNRRHV1VVc1M1dLQnF6ZEE_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPTFLNWdxWQ.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">电阻器与分压器</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VYV092TXpXRzZ0THRYZW1qb0Y0d0tjQnNJOTFOR0kxdVE0WlFGeEdzQW83UXc_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPVhMaW1SaA.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">三极管开关</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0Vkb1BRYkNGOE41RmxrX0pVTzloaWhvQjM4bGZET1JSTU1pdlVpT3pvQi1TS0E_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPTZCWjJmbw.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">三极管基础</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VmOVljSEN3a1U1Q3RQOTRtd2pSZ1pFQndNS0kxNTN4MTZuZnJfdkpBWm54M3c_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPVFlRllzSA.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">光控报警器</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VhR3c5MjBwMWVCR3B4d05jMkJSZVFNQkM0dk5RMXY0dTdybXJWZTk5alU1eXc_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPVgxZVE3Sg.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">光控电路</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VZODVDRGpPTWlGUHBDSXNma3k1X2NJQjg2bEdwQU1nM3o0RHE2WllVa3RUM1E_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPTNVb3FNOQ.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">耳机与简易窃听器</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VaVWNtRHFVd3d0RnBrSHZKSzRkMllZQm9oU1lyTFY2X3d3VU5wTWEteG5ualE_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPTIwUVhYbQ.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">话筒与声控</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VTMm1TZUdBVVd4SGxXMlRqc1hfY2o4QlJvOVlTQ2M5dEg2SVdXU3Brbm10MkE_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPWdnWHd3bQ.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">电容的隔直通交</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VVNV9pc0d4bEZWTnYwUjlOc1RmcFdvQnRFOWd4Q3VYcWdoeHkycS12SlJfMHc_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPU1ZRDZoZw.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">电容的储能与延时开关</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VmX1pvdG9VLW0xUGtRUlQ2MHFlbW1rQnZQY3A4ZkNlSnVDUm5BZ0pLR0NIV2c_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPUsyc0hwYg.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">二极管是如何做到单向导电</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VWUVduQW1Kem5oTnI2RlRNeklJOHJZQmtnWTktbzRjLUlKZm5mUE9SNFh1c0E_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPVY1M0daNg.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">电容的工作原理</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VTQl83UzNxX0VkQW02THFnZkV0ZC1BQkpFM0FqMlBCbm43TTlhTnMxbnhkQUE_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPUNCQUN2bg.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">三极管与话筒扩音器</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VjOTE5MXZCSVFsQWpXN1Uxa0FJNkU0QmwtODVXTEh6a1hGT1U5RlNCQzhOanc_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPXIzSXdIdw.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">电容器讲解</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VWaFJiTklDNHZORXJ0ODZmUXRONzY0QnpwV1dqMmhsNTBvZjNUQmkxM2N6S3c_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPTRFbkdaZw.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">电压讲解</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VUcWZYRjNCMEtKQWdNa1N2QVVzUm1NQlROYU9EdGFIQ1RMcGoxYWo0MUJrN3c_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPWUwQUFvaw.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">非常巧妙的一个电路</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VhRkJYVFh0OTJ4TnVNTmQ3R0YtUzdvQmUxdDFmbE9zdHhKSEF2VlVSaFd4VWc_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPU9yY0tTVw.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">放大器的简单介绍</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VRa2lVS3oxNm8xTGwtc2J5Wk1EMjFZQkZtajVQNzhNZkIyRXMxcWkwbFY3M1E_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPWJnb0c1UQ.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">火线零线和地线</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VTYW1KVUlrU2hGRmpYVTRHNWx6dmVZQlZJN0Y5d1piLTBCUllZamluMU52RFE_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPUlRU1h6VA.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">电机马达的工作原理</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VZTDRKWUlONWlkRnJlRVlyUHl4a3ZFQkloY1VqRFY0YjVzclFmNm42WUt3WVE_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPXR3bWlBTw.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">整流与滤波</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VTeEFxcG1xeTE5TGwzdTgyWEFHVnlNQm5fSHpxc1JuQXVPZ1lXRm96ZWJQMUE_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPW9wV2dnZg.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">继电器的工作原理</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VjS0IxVTlFVkZCSGdjRU9YVkxmZnFvQnU5eTdyVXlRY0txMnlfLTFtbzlPcGc_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPVNlV1JQZg.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">交流电是如何变为直流电的</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VaeGE4MmlvTHlOTXM3bm56YU9PZHpNQm40THJGaXJMdkJySmdJRGpZZXFRQXc_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPWZIa3BwQg.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">电感的这两个作用</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VYbmgtXzdIcHp0Q21ad2tmclZkX0RZQk5vdE45cmc2Z1I4cVZicGNNenRaNHc_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPTE4aGFEZw.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">零线和火线的区别</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VRX25aNjhVZ0t4SnV6R0FXUk1jaFgwQi1Da0JZUjI4aTVsVzlzT2lSRVhxSUE_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPVlsd2Z5WA.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">讲电阻</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0ViME16Wk9oNnRaQ3FBSEV5Qy1EWDV3Qi1MRFhYTUYwMk1nYlJJUHlHTWNRTGc_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPVM2SlhrZQ.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">讲电阻</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VjVVFFckxLRUdaTXJqNmM0SGpNUTJzQnBBN1I2aHNVWVlKN1BTY3NQc0Y5RHc_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPWk5UWgzVA.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">另类方式讲电阻</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VaYTdyTWR2RF9wS3Joa1pPMTdpUmhrQk41WEpLeEtCUEs1aWpldDJlelhFYlE_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPTRSOHhDMw.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">50个电路符号</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VVUDN5NHduNXJoSXNBb25IQXVoZTVzQkc2Z3hvRW5odXhhUS1tUU5kZk03RVE_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPWJJcGxrMQ.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">滤波器到底是什么</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VaZnRBSzlOZGFWRGswMXlfV0JtN2dnQmQ4VzZpclptTllSSUlaQUtzX0swV1E_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPUFnSDltaw.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">三极管是如何导电</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VaZnRBSzlOZGFWRGswMXlfV0JtN2dnQmQ4VzZpclptTllSSUlaQUtzX0swV1E_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPTZwSWdKMA.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">矿石收音机</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VTdzhTSnRyYy10SWxNYlJnMnF3Z1RJQmRFd0w0MnozSWQ5dDNoMUNrdnEtTFE_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPUFNUmpWYQ.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">神奇的芯片</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VldXFGTThCaXc5Q25tR2tOR1ByNWhrQnJFMXNIUmF4MFhXYlFEX1lSU2ZJOHc_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPVBZUnlJMQ.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">加法器的工作原理</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VUb1YyQUZRaHl4R2hTeTZBT3ZzQnc4QndybzFzc2FoWTlpQkJ1bE5YRWtVM1E_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPWxhYWxVSg.mp4" type="video/mp4">
+          </video>
+          </div>
+<h2 style="text-align: center;">蜂鸣器</h2>
+    <div class="video-container">
+        <video width="640" height="480" controls>
+            <source data-src="https://dlink.host/sharepoint/aHR0cHM6Ly96YmluZy1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9rNTVfemJpbmdfb25taWNyb3NvZnRfY29tL0VjLW84eTMyLTZCR3M2TFZZWWtlNWhzQmNCV3JjTTZLZnZFTldza09lUFU1MXc_bmF2PWV5SnlaV1psY25KaGJFbHVabThpT25zaWNtVm1aWEp5WVd4QmNIQWlPaUpQYm1WRWNtbDJaVVp2Y2tKMWMybHVaWE56SWl3aWNtVm1aWEp5WVd4QmNIQlFiR0YwWm05eWJTSTZJbGRsWWlJc0luSmxabVZ5Y21Gc1RXOWtaU0k2SW5acFpYY2lMQ0p5WldabGNuSmhiRlpwWlhjaU9pSk5lVVpwYkdWelRHbHVhME52Y0hraWZYMCZlPURSc2xKcw.mp4" type="video/mp4">
+          </video>
+          </div>
+
+               <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const tocList = document.getElementById("toc-list");
+            const headers = document.querySelectorAll("body > h2");
+          
+
+      
+            headers.forEach((header, index) => {
+                const id = "section" + (index + 1);
+                header.setAttribute("id", id);
+
+                const li = document.createElement("li");
+                const a = document.createElement("a");
+                a.setAttribute("href", "#" + id);
+                a.textContent = header.textContent;
+
+                li.appendChild(a);
+                tocList.appendChild(li);
+            });
+        });
+
+        // 获取所有需要懒加载的视频元素
+        const lazyVideos = document.querySelectorAll('video');
+
+        // 创建 IntersectionObserver 实例
+        const videoObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const lazyVideo = entry.target;
+                    const source = lazyVideo.querySelector('source');
+                    source.src = source.dataset.src; // 设置真实的 src
+                    lazyVideo.load(); // 加载视频
+                    videoObserver.unobserve(lazyVideo); // 停止观察
+                }
+            });
+        });
+
+        // 观察所有懒加载的视频
+        lazyVideos.forEach(video => {
+            videoObserver.observe(video);
+        });
+              
+    </script>
+</body>
+</html>

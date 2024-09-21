@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚨实词</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #282A36;
+            padding-top: 60px; /* 根据工具栏的高度调整 */
+            color: #f5f5f5;
+            line-height: 1.6;
+            margin-left: 250px;
+            margin-right: 80px; /* 根据目录宽度调整 */
+            font-family: Arial, sans-serif;
+            counter-reset: section;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* 所有内容左对齐 */
+        }
+        h1, h2, h3 {
+            color: #4592af;
+            margin-left: 2px;
+            white-space: nowrap;     /* 防止换行 */
+            overflow: hidden;        /* 隐藏溢出内容 */
+            text-overflow: ellipsis; /* 添加省略号表示溢出 */
+            margin-top: 2px;
+            margin-bottom: -1px;
+            display: block;          /* 确保是块级元素 */
+            font-size: 24px; /* 根据需要调整 */
+        }
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+        #toc {
+            position: fixed;
+            top: 5px;
+            left: -1px;
+            max-height: 90vh; /* 设置最大高度为视口高度的80% */
+            max-width: 32vh;  /* 设置最大宽度为视口宽度的45% */
+            overflow-y: auto; /* 添加垂直滚动条 */
+            background-color: rgba(40, 42, 54, 0.9); /* 半透明背景 */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+        }
+        #toc ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            counter-reset: section; /* 重置计数器 */
+        }
+        #toc li {
+            counter-increment: section;
+        }
+        #toc li::before {
+            content: counter(section, decimal-leading-zero) ". "; /* 使用 decimal-leading-zero 格式 */
+            color: #282A36;  /* 设置编号的颜色为红色 */
+        }
+        #toc a {
+            color: #4592af;   /* 设置了链接的颜色 */
+            text-decoration: none;
+        }
+        #toc a:hover {
+            text-decoration: underline;
+        }
+        body > h2 {
+            counter-increment: section; /* 每当遇到一个 h2 元素时，section 计数器增加 1 */
+        }
+
+        body > h2::before {
+            content: counter(section, decimal-leading-zero) ". "; /* 在 h2 元素之前插入计数器的当前值，使用 decimal-leading-zero 格式 */
+            color: #ff461f; /* 设置插入内容的颜色 */
+        }
+    </style>
+</head>
+<body>
+    <div id="toc">
+        <ul id="toc-list">
+            <!-- 目录项将由JavaScript生成 -->
+        </ul>
+    </div>
+
+    <span style="color: #aaebef;">
+   
+    <br>
+
+
+
+
+
+
+
+<p>01 <span style="font-family:KaiTi; font-size:30px; color: #d7003a"><span style="color: #00e500; font-size:30px">度</span>我至军中，公乃入。沛公已去，<span style="color: #00e500; font-size:30px">间</span>至军中。张良入谢。  </span><br>
+- 度 duó：估计。 </span><br>
+- 间 jiàn：间道；偏僻的小路。 </span><br>
+  - :flags: 间道：偏僻的或抄近的小路。 </span><br>
+- 估计我到了军营，您才能进去(见项王)。刘邦离去后，(估计到)从小路(已经)回到军营里。张良(才)进去谢罪。 </span><br>
+  - :bulb:  史记 • 鸿门宴 </span><br>
+</p><p>02 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">故令人持璧归，<span style="color: #00e500; font-size:30px">间</span>至赵矣。  </span><br>
+- 间 jiàn：间道；偏僻的小路。 </span><br>
+  - :flags: 间道：偏僻的或抄近的小路。 </span><br>
+- 所以让人拿着和氏璧从小路回赵国去了。 </span><br>
+  - :bulb: 史记 • 廉颇蔺相如列传 </span><br>
+
+</p><p>03 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">尧民之<span style="color: #00e500; font-size:30px">病</span>水者，上而为巢，是为避害之巢。  </span><br>
+- 病：担心，忧虑，怕。  </span><br>
+- 尧的百姓担心水患，因而在水上筑巢，这是避免灾害的巢。 </span><br>
+  - :bulb:  陆游 • 书巢记 </span><br>
+</p><p>04 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">子曰：“君子<span style="color: #00e500; font-size:30px">病</span>无能焉，不<span style="color: #00e500; font-size:30px">病</span>人之不己知也。”   </span><br>
+- 病：担心，忧虑，怕。  </span><br>
+- 孔子説：“君子忧虑自己没有能力，不担心别人不知道自己。” </span><br>
+  - :bulb: 论语 • 卫灵公 </span><br>
+
+</p><p>05 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">曾子寝疾，<span style="color: #00e500; font-size:30px">病</span>。  </span><br>
+- 疾：患病。（病的轻） </span><br>
+- 病：害重病。 </span><br>
+- 曾子有卧病在床，病得很重。 </span><br>
+  - :bulb: 礼记 • 檀弓 • 曾子易箦 </span><br>
+  - :flags: <font size = '5'>簀</font> zé： 竹编的席子。 </span><br>
+
+</p><p>06 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">人<span style="color: #00e500; font-size:30px">病</span>则忧惧，忧惧见鬼出。  </span><br>
+- 病：害重病。 </span><br>
+- 人得了重病，就又愁又怕，又愁又怕，就会看到鬼出现。 </span><br>
+  - :bulb: 王充 • 订鬼 </span><br>
+
+</p><p>07 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">子疾<span style="color: #00e500; font-size:30px">病</span>，子路请祷。  </span><br>
+- 疾病：轻者称疾，重者称病，这里二字连用表示病重。 </span><br>
+- 孔子病重，子路请求为他祈祷。 </span><br>
+  - :bulb: 论语 • 述而篇第七 </span><br>
+</p><p>08 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">相如每朝时，常称<span style="color: #00e500; font-size:30px">病</span>，不欲与廉颇争列。  </span><br>
+- 病：生病、有病。 </span><br>
+- 每逢上朝的时候，经常推说有病，不愿和廉颇争位次的上下。 </span><br>
+  - :bulb: 史记 • 廉颇蔺相如列传 </span><br>
+</p><p>09 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">不如舜，不如周公，吾之<span style="color: #00e500; font-size:30px">病</span>也。  </span><br>
+- 病：缺点、毛病，弊病。 </span><br>
+- 不如虞舜，不如周公，这是我的缺点。 </span><br>
+  - :bulb: 韩愈 • 原毁 </span><br>
+</p><p>10 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">故其词多郁而不明，此作史之<span style="color: #00e500; font-size:30px">病</span>也。  </span><br>
+- 病：缺点、毛病，弊病。 </span><br>
+- 所以它叙述的事情大多晦涩不明晰，这是写作史书的弊病。 </span><br>
+  - :bulb: 顾炎武 • 文章繁简 </span><br>
+</p><p>11 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">今日<span style="color: #00e500; font-size:30px">病</span>矣，予助苗长矣！  </span><br>
+- 病：疲倦，困乏、困苦，并引申为“窘困”。 </span><br>
+- 今天累坏了，我帮庄稼长高了。 </span><br>
+  - :bulb: 孟子 • 揠苗助长 </span><br>
+</p><p>12 <span style="font-family:KaiTi; font-size:30px; color: #d7003a"><span style="font-family:KaiTi;font-size:27px;color: #9d2933">欲辟土地，朝秦楚，莅中国而抚四夷也。</span>    </span><br>
+- 想开拓疆土，使秦国、楚国来朝见，统治整个中原地区，安抚四方的少数民族。 </span><br>
+- 朝：使……朝见（使动）。 </span><br>
+- 莅：统治。 </span><br>
+    - :flags:  莅：来，到。 </span><br>
+- 抚：安抚。 </span><br>
+
+
+
+
+
+</p><p>30 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">因<span style="color: #00e500; font-size:30px">出</span>己虫，纳比笼中。  </span><br>
+- 于是取出自己的蟋蟀，放进斗蟋蟀的笼子里。 </span><br>
+- 因：于是。 </span><br>
+- 出：取出、拿出。 </span><br>
+- 纳：放进。 </span><br>
+- 比：较量，比试。 </span><br>
+  - :bulb: 聊斋志异 • 促织  </span><br>
+</p><p>32 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">备他盗之<span style="color: #00e500; font-size:30px">出入</span>与非常也。  </span><br>
+- 防备其他盗贼进入和意外的变故。 </span><br>
+- 他：其他。 </span><br>
+- 之：结构助词、用于主谓之间，取消句子独立性。 </span><br>
+- 出入：进来。偏义复词，义偏“入”。 </span><br>
+- 非常：意外的变故。 </span><br>
+- 也：语助，表判断。 </span><br>
+  - :bulb:  史记 • 鸿门宴 </span><br>
+</p><p>33 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">一日，风雪严寒，从数骑<span style="color: #00e500; font-size:30px">出</span>，微行入古寺。  </span><br>
+- 一天，风雪交加，天气特别冷，带着几个骑马的随从，穿着平民的便服出去，进了一座古庙。 </span><br>
+- 微：隐匿；隐藏。 </span><br>
+- 微行：帝王或高官隐匿身分，着便服出行。 </span><br>
+- 出：外出。 </span><br>
+- 严：猛烈的；厉害的。 </span><br>
+- 严寒：极度寒冷。 </span><br>
+- 骑：骑马的侍从。 </span><br>
+- 从：使动>使……跟从；让……跟随。直译: 率领，带着。 </span><br>
+  - :bulb: 左忠毅公逸事 </span><br>
+</p><p>34 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">瑜自<span style="color: #00e500; font-size:30px">部领</span>诸将接应。  </span><br>
+- 部领：统辖率领。 </span><br>
+- 周瑜亲自统率众将接应。 </span><br>
+  - :bulb: 三国演义 </span><br>
+</p><p>35 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">汉王<span style="color: #00e500; font-size:30px">部</span>五诸侯兵，凡五十六万人。  </span><br>
+- 部：统率，率领。 </span><br>
+- 凡：动>总共；总计，表示总合。 </span><br>
+- 汉王统率五个诸侯国的军队，共五十六万人。 </span><br>
+  - :bulb: 史记 • 项羽本记 </span><br>
+- 36 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">还<span style="color: #00e500; font-size:30px">部</span>白府君：下官奉使命，言谈大有缘。  </span><br>
+- 还：回到。 </span><br>
+- 部：官府，官署。 </span><br>
+- 白：禀告。 </span><br>
+- 府君：太守。 </span><br>
+- 下官：地位低的官员自称。 </span><br>
+- 奉：遵从。 </span><br>
+- 使命：使：使命。　命：使命。 同义连用。 </span><br>
+- 言谈：言：说。　谈：说。　同义连用。 </span><br>
+- 大：很。 </span><br>
+- 回到宜署禀告太守：“我遵从(您的)使命，商谈(这桩婚事)，(他俩)很有缘。 </span><br>
+  - :bulb: 孔雀东南飞  </span><br>
+
+</p><p>38 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">转击项籍。攻曲逆，<span style="color: #00e500; font-size:30px">最</span>。  </span><br>
+- 最：功劳评定的最高等级。 </span><br>
+- 转过头来攻打项籍的军队。在攻打曲逆时，又立头功。 </span><br>
+  - :bulb: 史记 • 绛侯周勃世家 </span><br>
+</p><p>39 <span style="font-family:KaiTi; font-size:30px; color: #d7003a"><span style="color: #00e500; font-size:30px">最</span><span style="color: #ff117f; font-size:30px">从</span>高帝得相国一人，丞相二人，将军、二千石各三人。  </span><br>
+- 最：总共、总计。 </span><br>
+- 从：动词>跟随；跟着。 </span><br>
+- (周勃)跟随高祖(出征)，总共俘获相国一人，丞相二人，将军和年俸为二千石的官员各三人。 </span><br>
+  - :bulb: 史记 • 绛侯周勃世家 </span><br>
+</p><p>40 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">而<span style="color: #00e500; font-size:30px">从</span>六国破亡之故事。  </span><br>
+- 从：动词>跟随；跟着。 </span><br>
+- 故事：旧事，以往的事情。 </span><br>
+- 又跟着六国走灭亡的老路。 </span><br>
+  - :bulb: 苏洵 • 六国论 </span><br>
+
+
+</p><p>43 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">君子<span style="color: #00e500; font-size:30px">引</span>而不发，跃如也。中道而立，能者从之。  </span><br>
+- 引：拉弓。 </span><br>
+- 如：词缀。用于形容词后，表示“……的样子”，也可不译。 </span><br>
+- (君子教导别人正如射手)张满了弓，却不发箭，作出跃跃欲试的样子。他站在正道的中间，有能力的就会跟着他去学。 </span><br>
+- :books: 公孙丑向先生孟子提出了一个问题：“先生，您给我们讲的道的确是极好的，可就是太难了，为什么它不能变得浅显一些?” </span><br>
+孟子说：“一个高明的工匠，他使用的规矩别人是很难掌握的，但他绝不会因为别人掌握不了而废弃自己的规矩;古代的神射手后羿，他的弓别人是很难拉开的，但他不会因为别人不中意而改变自己开弓的标准。圣贤君子教导别人也如同射手一样，张满了弓，却不发箭(引而不发)，做出跃跃欲试的姿势，让你从中受到启发，领会其中的技法。传授道的人也是这样，他站在路中间，有能力的就会跟着他去学。” </span><br>
+  - :bulb: 孟子 • 尽心上 </span><br>
+</p><p>44 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">复夜<span style="color: #00e500; font-size:30px">引</span>兵出门。  </span><br>
+- 复：又。 </span><br>
+- 夜：连夜。 </span><br>
+- 引：率领。 </span><br>
+- 又连夜率领军队出寨门。 </span><br>
+  - :bulb: 资治通鉴 • 李愬雪夜入蔡州 </span><br>
+</p><p>45 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">左右欲<span style="color: #00e500; font-size:30px">引</span>相如去。  </span><br>
+- 引：拉。 </span><br>
+- 左右：近臣；侍从、卫士。 </span><br>
+- 奏王的卫士想把蔺相如拉出去。 </span><br>
+  - :bulb: 史记 • 廉颇蔺相如列传 </span><br>
+</p><p>46 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">虞常果<span style="color: #00e500; font-size:30px">引</span>张胜。  </span><br>
+- 引：招供、牵扯出。 </span><br>
+- 虞常果然牵扯出张胜。 </span><br>
+  - :bulb: 汉书 • 苏建传 </span><br>
+</p><p>47 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">每得降卒，必亲<span style="color: #00e500; font-size:30px">引</span>问委曲。  </span><br>
+- 引：招来。 </span><br>
+- 曲：周遍；多方面；详尽。 </span><br>
+- 委曲：事情的底细和原委。 </span><br>
+- 每次有来投降的兵，一定亲自叫来询问敌方的底细。 </span><br>
+  - :bulb: 资治通鉴 • 李愬雪夜入蔡州 </span><br>
+
+</p><p>96 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">有华阴令欲媚上官，以一头进，试使斗而<span style="color: #00e500; font-size:30px">才</span>。  </span><br>
+- 才：有才能，在能力。形容词。 </span><br>
+- 使：动>让；叫。 </span><br>
+- 而：连词。表转折。犹然而，却。 </span><br>
+- 有个华阴县县令想讨好上司，便将一只蟋蟀进献，试着让它同别的蟋蟀争斗，却表现得很厉害。 </span><br>
+  - :bulb: 蒲松岭 • 聊斋志异 • 促织 </span><br>
+</p><p>97 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">此印者<span style="color: #00e500; font-size:30px">才</span>毕，则第二版已具。  </span><br>
+- 才：刚刚，方才，副词。 </span><br>
+- 具：动>置办；准备。 </span><br>
+- 这块版刚印完，第二版就已经准备好了。 </span><br>
+  - :bulb: 沈括 • 梦溪笔谈·活板 </span><br>
+</p><p>98 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">初极狭，<span style="color: #00e500; font-size:30px">才</span>通人。  </span><br>
+- 才：仅仅，只。副词。 </span><br>
+- 开始的地方很狭窄，仅能通过一个人。 </span><br>
+  - :bulb: 陶渊明 • 桃花源记 </span><br>
+
+</p><p>101 重刑，连其<span style="color: #00e500; font-size:30px">罪</span>，则民不敢试。  [^101] </span><br>
+- 罪：动词  处刑、处罚。 </span><br>
+- 连：连坐  。 </span><br>
+- 试：冒犯；触犯。 </span><br>
+- 加重刑罚,  实施连坐处罚，那么民众就不敢以身试法。 </span><br>
+  - :bulb: 商君书 • 赏刑 </span><br>
+</p><p>102 吏见知不举者与同<span style="color: #00e500; font-size:30px">罪</span>。 [^102] </span><br>
+- 罪：动词  处刑、处罚。 </span><br>
+- 官吏看到、知道有人犯罪不告发的，同犯人一样处罚。 </span><br>
+  - :bulb: 史记 • 秦始皇本纪 </span><br>
+</p><p>20 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">寡君闻吾子将步师出于敝邑，<span style="color: #00e500; font-size:30px">敢</span>犒从者。  </span><br>
+- 吾子：对对方的敬爱之称。 </span><br>
+- 步师：行军。 </span><br>
+- 出于：经过。 </span><br>
+- 敢：副词 表示谦敬。 </span><br>
+- 犒 kào：用酒食或财物慰劳。 </span><br>
+- 从者：指部下。 </span><br>
+- 我们的国君听说贵军要行军经过我们的国土，<span style="color: #ffff7f; font-size:30px">冒昧地</span>前来慰劳您的部下。 </span><br>
+- 我们国君听说贵军行军将经过敝国，<span style="color: #ffff7f; font-size:30px">谨</span>派我来慰劳您的部下。 </span><br>
+  - :bulb: 左传 • 殺之战 </span><br>
+</p><p>21 <span style="font-family:KaiTi; font-size:30px; color: #d7003a"><span style="color: #00e500; font-size:30px">敢</span>乞一言以为生。  </span><br>
+- 敢：副词 表示谦敬。 </span><br>
+- 一言：说一句话。 </span><br>
+- 以为：使……成为。 </span><br>
+- <span style="color: #ffff7f; font-size:30px">斗胆</span>乞求(您)说一句话使我能活下来。 </span><br>
+- 斗胆乞求(您)说一句话来救我的命。 </span><br>
+  - :bulb: 马中锡 • 中山狼传 • 明 </span><br>
+</p><p>22 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">会其怒，不<span style="color: #00e500; font-size:30px">敢</span>献。公为我献之。  </span><br>
+- 会：适逢、恰逢。 </span><br>
+- 献：动>奉献；进献。 </span><br>
+- 公：尊称，您。 </span><br>
+- 为：替。 </span><br>
+- 正碰上他们生气，不敢呈献。您替我献给他们吧。 </span><br>
+  - :bulb:  史记 • 鸿门宴 </span><br>
+
+
+
+</p><p>01 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">此庸夫之怒也。  </span><br>
+- 这只是庸夫的怒。 </span><br>
+- 庸夫：平庸无能，见识浅陋的人。 </span><br>
+  - :flags: 上古汉语句法成分有两个主要的特点： </span><br>
+- 第一是判断句一般<span style="color: #00e500; font-size:30px">不用系词</span>；   </span><br>
+如  ：孔子，鲁人也。不用系词“是”字。 </span><br>
+- 第二是第三人称代词一般不用作主语。 </span><br>
+--- </span><br>
+- 在上古时代，“是”和“此”是同义词，都当“这”字讲。 </span><br>
+- 直不百步耳，<span style="color: #00e500; font-size:30px">是</span>亦走也。 </span><br>
+- 只是(他们)没有(跑)到百步罢了,<span style="color: #00e500; font-size:30px"> 这</span>也是逃跑。 </span><br>
+
+</p><p>02 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">幕府初开，羣公辟命，求英奇於<span style="color: #00e500; font-size:30px">仄陋</span>，采贤儁於<span style="color: #00e500; font-size:30px">巖穴</span>。  </span><br>
+- <font size = '5'>羣</font>qún公：群公；百官。 </span><br>
+- 辟命：征召，任命。 </span><br>
+- 㑺 jùn ：才智过人的。 </span><br>
+- <font size = '5'>巖</font>穴 yánxué： 岩穴；以居住在岩穴中者来譬喻隐居之士。 </span><br>
+- 幕府：古代军旅无固定住所，以帐幕为府署，故称幕府。后也称官府衙署为幕府。 </span><br>
+- 官府衙署刚成立，官员们都在征召幕僚，在出身卑微者中求取英才奇士，在山居隐士中征集贤人俊杰。 </span><br>
+  - :bulb: 南朝 宋 刘义庆 • 世说新语 </span><br>
+</p><p>03 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">有功故出反囚，罪当诛，请<span style="color: #00e500; font-size:30px">按</span>之。  </span><br>
+- 故：副>故意；特意。 </span><br>
+- 出：释放；开脱。 </span><br>
+- 按：追究、追查。  </span><br>
+- 反：谋反。 </span><br>
+- 徐有功特意为谋反的人开脱，论罪应当处死，请追查他。 </span><br>
+  - :bulb:  新唐书 • 徐有功传 </span><br>
+</p><p>04 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">府省为奏，敕<span style="color: #00e500; font-size:30px">报</span>许之。  </span><br>
+- 报 ：回复、批复。 </span><br>
+- 为 wèi ：介>给；替。 </span><br>
+- 敕 chì： 帝王的诏书、命令。 </span><br>
+- 许：应允，认可。 </span><br>
+- 府省为百姓上奏，皇上下诏同意了这件事。 </span><br>
+  - :bulb:  北齐书 • 袁聿修传 </span><br>
+</p><p>05 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">大败李信，入两<span style="color: #00e500; font-size:30px">壁</span>，杀七都尉。  </span><br>
+- 大败：使（对方）遭受严重的失败。 </span><br>
+- 壁：营垒。  </span><br>
+- （楚军）大败李信的军队，攻下两座营垒，杀死七名都尉。 </span><br>
+  - :bulb: 资治通鉴 • 秦纪 </span><br>
+</p><p>06 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">其诗<span style="color: #00e500; font-size:30px">以</span>养父母，收族<span style="color: #00e500; font-size:30px">为</span>意，传一乡秀才观 之。  </span><br>
+- 以......为意：以......为题意。 </span><br>
+- 传：传给。 </span><br>
+- 族：同族人。 </span><br>
+- 收族：谓以上下尊卑、亲疏远近之序团结族人。 </span><br>
+- 他的这首诗是以供养父母，团结族人为内容，传给全乡的秀才去看。 </span><br>
+  - :bulb: 王安石 • 伤仲永 </span><br>
+</p><p>07 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">圣人<span style="color: #00e500; font-size:30px">之所以</span>为圣，愚人之所以为愚，其皆出于此乎。  </span><br>
+- 圣人高明的原因，愚人糊涂的缘故，(原因)大概都出在这里吧？ </span><br>
+- 之：取独。 </span><br>
+- 所以：...的原因。 </span><br>
+- 其：副>恐怕；大概。表示推测、估计。 </span><br>
+- 其：语气助词，表疑问。 </span><br>
+- 出：产生，引起。 </span><br>
+- 于：介词，从；由。 </span><br>
+- 出于：出在。 </span><br>
+  - :bulb: 韩愈 • 师说  </span><br>
+</p><p>08 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">乃自强<span style="color: #00e500; font-size:30px">步</span>，日三四里。  </span><br>
+- 步：行走：动词。 </span><br>
+(就)自己勉强走一走，每天走上三四里。 </span><br>
+  - :bulb: 战国策 • 触龙说赵太后 </span><br>
+</p><p>09 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">请京，使居之，谓之京城<span style="color: #00e500; font-size:30px">大叔</span>。  </span><br>
+- 京：地名，今河南荥阳东南。 </span><br>
+- 谓之京城大<span style="color: #ff0097; font-size:35px">tài</span> 叔：大，同“太”。古人用‘太’字，本指其位列之在前，叔段之称太叔以其为郑庄公之第一个弟弟也。 </span><br>
+- 共 <span style="color: #ff0097; font-size:35px">ɡōnɡ</span> 叔段：郑庄公弟，名段；兄弟间年岁小，故称“叔段”。段后出奔共地，故称“共叔段”。共，本为国名，在今河南辉县。 </span><br>
+- 使：让。 </span><br>
+- 居：镇守。 </span><br>
+- 请求将京城（作为封地），让共叔段镇守在那里，大家都称他“京城太叔”。 </span><br>
+  - :bulb: 左传 • 郑伯克段于鄢 </span><br>
+</p><p>10 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">謋然已解，如土<span style="color: #00e500; font-size:30px">委</span>地。  </span><br>
+- <font size = '5'>謋</font> <span style="color: #ff0097; font-size:35px">huò</span>：象声词。骨肉离开的声音。 </span><br>
+- 委：动>卸落；散落。 </span><br>
+- 委地：散落在地上。 </span><br>
+- 豁啦一声，牛的骨和肉一下子就解开了，就像泥土散落在地上一样。 </span><br>
+  - :bulb: 庄子 • 庖丁解牛 </span><br>
+
+
+</p><p>13 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">先王之制：大都，不过<span style="color: #00e500; font-size:30px">参</span>国之一；中，五之一；小，九之一。  </span><br>
+- 参 <span style="color: #ff0097; font-size:35px">sān</span>：通“三”。 </span><br>
+- 国：国都。 </span><br>
+- 都，都邑。古之城邑皆可谓都。 </span><br>
+- 参国之一：国都的三分之一。 </span><br>
+- 先王的制度：大的城邑，不得超过国都的三分之一；中等的，不超过五分之一；小的，不超过九分之一。 </span><br>
+</p><p>14 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">故不积跬步，<span style="color: #00e500; font-size:30px">无以</span>至千里。  </span><br>
+- 跬 <span style="color: #ff0097; font-size:35px">kuǐ</span>：古代的半步。古代称跨出一脚为“跬”，跨两脚为“步”。 </span><br>
+- 无以：固定结构；无法，不能。 </span><br>
+- 所以不积累每一小步，就不能到达千里之外； </span><br>
+</p><p>15 <span style="font-family:KaiTi; font-size:30px; color: #d7003a"><span style="color: #00e500; font-size:30px">期</span>我乎桑中。  </span><br>
+- 期：约会，约定。 </span><br>
+- 乎：介>相当于“于”。介绍处所、方向、时间。译为“在”、“由”等。 </span><br>
+- 桑中：地名，在今河南淇县南。另，桑中：桑林之中。 </span><br>
+- 约我到桑中（地名）。 </span><br>
+  - :bulb: 诗经 • 桑中 </span><br>
+</p><p>16 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">毋宁毙于虞人，以俎豆于贵家。  </span><br>
+- 毋宁<span style="color: #ff0097; font-size:35px">wú nìng</span> ：同无宁。副 表示“不如”。 </span><br>
+ - 虞：古代掌管山林川泽之官。 </span><br>
+- 贵家：高门大族之家。于贵家，介宾短语状语后置。 </span><br>
+- 俎zǔ豆：两者都是盛食物、祭品的器皿。活用为动词。 </span><br>
+- 不如死在看山人手里，成为高贵人家盘中的菜肴。 </span><br>
+  - :bulb: 马中锡 • 中山狼传 </span><br>
+
+</p><p>51 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">吾忘持<span style="color: #00e500; font-size:30px">度</span>。  </span><br>
+- 读 <span style="color: #ff0097; font-size:25px">dù</span>：尺码。 </span><br>
+- 我忘了带(量好的脚的)尺码。 </span><br>
+  - :bulb:  韩非子 • 郑人买履 </span><br>
+
+</p><p>52 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">先自<span style="color: #00e500; font-size:30px">度</span>其足。  </span><br>
+- 读 <span style="color: #ff0097; font-size:25px">duó</span>：量长短。 </span><br>
+- 先量好自己的脚的尺码。 </span><br>
+  - :bulb:  韩非子 • 郑人买履 </span><br>
+
+</p><p>10 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">良庖岁更刀，割也；<span style="color: #00e500; font-size:30px">族</span>庖月更刀，折也。  </span><br>
+- 庖 páo丁：一说名叫丁的庖人，一说即厨师。 </span><br>
+- 割：这里指生割硬砍。 </span><br>
+- 族：众多、一般的。 </span><br>
+- 折：犹斫；用刀砍骨头。 </span><br>
+  - :flags:  斫 zhuó:：动>砍；削。 </span><br>
+- 好的厨子一年换一把刀，那是用刀割肉砍筋；大多数的厨子一个月就得换一把刀，那是硬用刀去砍骨头。 </span><br>
+  - :bulb: 庄子 • 庖丁解牛 </span><br>
+
+</p><p>11 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">虽然，每至于<span style="color: #00e500; font-size:30px">族</span>，吾见其难<span style="color: #ff0097; font-size:30px">为</span>，怵然<span style="color: #ff0097; font-size:30px">为</span>戒。视<span style="color: #ff0097; font-size:30px">为</span>止，行<span style="color: #ff0097; font-size:30px">为</span>迟。  </span><br>
+- 虽然：虽然这样；即使如此。 </span><br>
+- 至于：到；到达。 </span><br>
+- 族：筋骨交错的地方。 </span><br>
+- 怵（chù）然：警惧的样子。这里译为谨慎地、小心翼翼地。 </span><br>
+- 吾见其难为 中的“为” wéi　做、对付、处理. </span><br>
+- 怵然为戒 中的“为”wéi 是 产生.  可以直译为 谨慎地产生戒备。意译为小心翼翼地提高警惕。 </span><br>
+- 视为止，行为迟，wèi 即“视为(之)止,行为(之)迟”.   两个“为”是  因为.　喻目光专注，动作缓慢。 </span><br>
+- 视：名>视力；目光。 </span><br>
+- 止：停住。 </span><br>
+- 迟：形>慢，缓慢。 </span><br>
+- 即使是这样，每当碰到筋骨交错的地方，我看到此处很难下刀，就小心翼翼地提高警惕。视力(因之)集中到一点，动作(因之)缓慢下来。 </span><br>
+  - :bulb: 庄子 • 庖丁解牛 </span><br>
+--- </span><br>
+--- </span><br>
+</p><p>12 <span style="font-family:KaiTi; font-size:30px; color: #d7003a"><span style="color: #ff0097; font-size:30px">向</span>吾不为斯役，则久已<span style="color: #00e500; font-size:30px">病</span>矣。  </span><br>
+- 向：从前，往昔，当初。 </span><br>
+- 向：如果，假使，假如。 </span><br>
+- 斯：这。 </span><br>
+- 久：早。 </span><br>
+- 病：疲倦，困乏、困苦，并引申为“窘困”。 </span><br>
+- 当初如果我不干这差事，那早已经困苦不堪了。 </span><br>
+  - :bulb: 柳宗元 • 捕蛇者说 </span><br>
+</p><p>13 <span style="font-family:KaiTi; font-size:30px; color: #d7003a"><span style="color: #00e500; font-size:30px">向</span>不出其技，虎虽猛，疑畏，卒不敢取。  </span><br>
+- 向：从前，往昔，当初。 </span><br>
+- 向：如果，假使，假如。 </span><br>
+- 疑畏：多疑又害怕。 </span><br>
+- 卒：最后，最终，终究。 </span><br>
+- 取：割取，捕获，猎取。 </span><br>
+- 当初如果驴不使出它的那点本领，老虎即使凶猛，但由于多疑、畏惧，终究不敢捕杀驴子 。 </span><br>
+  - :bulb: 柳宗元 • 黔之驴 </span><br>
+</p><p>14 <span style="font-family:KaiTi; font-size:30px; color: #d7003a"><span style="color: #00e500; font-size:30px">向</span>之寿民，今为殇子矣。   </span><br>
+- 向：从前，往昔，当初。 </span><br>
+- 殇子 shānɡ：未成年而死的人，短命的人。 </span><br>
+  - :flags: 国殇：为国牺牲的人。 </span><br>
+- 从前长寿的人，现在都成短命鬼了。 </span><br>
+  - :bulb: 吕氏春秋 • 察今 </span><br>
+</p><p>15 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">肃曰：“<span style="color: #00e500; font-size:30px">向</span>察众人之议，专欲误将军，不足与图大事。”  </span><br>
+- 向：刚才。 </span><br>
+- 察 ：仔细看，调查研究。 </span><br>
+- 专：专门，存心。 </span><br>
+- 不足：不值得，不可以；不能。 </span><br>
+- 图：谋划，计议，商议。 </span><br>
+- 鲁肃说：“刚才，我观察众人的议论，存心想贻误将军，不能与(这些人)商议大事。 </span><br>
+  - :bulb: 资治通鉴 • 赤壁之战 </span><br>
+</p><p>16 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">信乃解其缚，东<span style="color: #00e500; font-size:30px">乡</span>坐，西<span style="color: #00e500; font-size:30px">乡</span>对，师事之。  </span><br>
+- 乃：助词。无义。 </span><br>
+- 乡：通"向"；朝,向。 </span><br>
+- 事：侍奉；供奉。 </span><br>
+- 韩信亲自解开他的绑绳，并请他面朝东而坐，自己则是面向西与广武君对坐，像对待老师那样恭敬地对待广武君。 </span><br>
+  - :bulb: 史记 • 淮阴侯列传 </span><br>
+--- </span><br>
+--- </span><br>
+</p><p>17 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">云 <span style="color: #00e500; font-size:30px">是</span>当为河伯妇。  </span><br>
+- 是：代词　这、此: </span><br>
+- 说这个姑娘该做河神的妻子。 </span><br>
+  - :bulb: 史记 • 西门豹治邺 </span><br>
+</p><p>18 <span style="font-family:KaiTi; font-size:30px; color: #d7003a"><span style="color: #00e500; font-size:30px">坐</span>是，两者弗获相通也。  </span><br>
+- 以为逾汶之貉、逾淮之橘也，坐是，两者弗获相通也。 </span><br>
+- <span style="color: #00e500; font-size:30px">由于</span>这两种<span style="color: #00e500; font-size:30px">原因</span>，两地的作物就不能相互引种了。 </span><br>
+- 坐：连词 因为、“由于……原因”。 </span><br>
+- 是：代词　这、此: </span><br>
+  - :bulb: 徐光启 • 甘薯疏序 </span><br>
+  - :bulb:《周礼·考工记》：“橘逾淮而北为枳，鸜鹆 <span style="color: #ff0097; font-size:30px">qúyù</span>不逾济，貉逾汶则死，此地气然也。 </span><br>
+   - :flags: 淮，淮河。汶wèn，大汶河。<font size = '5'>鸜鹆</font>：八哥。 </span><br>
+</p><p>19 <span style="font-family:KaiTi; font-size:30px; color: #d7003a"><span style="color: #00e500; font-size:30px">是</span>吾剑之所从坠。  </span><br>
+- 之：结构助词，取消句子独立性。 </span><br>
+- 所：处所、地方： </span><br>
+- 所从坠：坠落的地方。 </span><br>
+- 这里是我的剑掉下去的地方。 </span><br>
+  - :bulb: 吕氏春秋 • 刻舟求剑 </span><br>
+</p><p>20 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">唯才<span style="color: #00e500; font-size:30px">是</span>举，吾得而用之。  </span><br>
+- 是：助词 放在宾语后面，使宾语提到动词之前。“唯......是......”是一种固定的句型。如　唯命是从 唯命是听 唯利是图 唯才是举 </span><br>
+- 只推举有才能的人，我得到后就启用他。 </span><br>
+  - :bulb: 曹操 • 求贤令 </span><br>
+- “二三子其佐我明扬仄陋，唯才是举，吾得而用之”。 曹操提出的选用人才方针。强调士有偏短，不可求全责备，只要有治国安邦之才，即便不守信、笃行者，也可重用。即，有才无德和有德无才，选有才无德之人。 </span><br>
+- 仄陋 zè lòu：同“侧陋”。卑贱低微。 </span><br>
+- 《尚书·尧典》：“明明，扬侧陋。” </span><br>
+</p><p>21 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">将虢<span style="color: #00e500; font-size:30px">是</span>灭，何爱于虞？  </span><br>
+- 将：将要，都要。 </span><br>
+- 是：助词 放在宾语后面，使宾语提到动词之前。 </span><br>
+- 爱：怜惜；爱惜。 </span><br>
+- 于：介>介绍动作行为涉及的对象，可译为“对”、“向”等。 </span><br>
+- 晋国都要灭掉虢国了，对虞国又有什么怜惜的？ </span><br>
+  - :bulb: 左传 • 宫之奇谏假道 </span><br>
+--- </span><br>
+--- </span><br>
+</p><p>22 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">来敏字敬达，好<span style="color: #00e500; font-size:30px">是</span>正文字。  </span><br>
+- 是：改正、纠正、订正。 </span><br>
+- 是正：订正；校正。 </span><br>
+- 来敏字敬达，喜欢改正文章字句。 </span><br>
+  - :bulb: 三国志 • 来敏传 </span><br>
+--- </span><br>
+--- </span><br>
+</p><p>23 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">曰：“<span style="color: #00e500; font-size:30px">是</span>鲁孔丘与？”曰：“<span style="color: #00e500; font-size:30px">是</span>也”。  </span><br>
+- 是：对、正确、正是。 </span><br>
+- 与 yú：助>表示疑问、反诘或感叹，相当于“吗”、“吧”、“啊”。这个意义后来写作“欤”。 </span><br>
+- 问：““这人是鲁国的孔丘吗？”回答说： “对”。 </span><br>
+  - :bulb: 论语 • 微子 </span><br>
+--- </span><br>
+--- </span><br>
+</p><p>24 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">问今<span style="color: #00e500; font-size:30px">是</span>何世，乃不知有汉，无论魏晋。  </span><br>
+- 是：判断词，是。 </span><br>
+- 乃：竟然，居然。 </span><br>
+- 无论：不要说，更不必说。 </span><br>
+- 问起现在是什么朝代，竟然不知道有过汉朝，更不必说魏晋了。 </span><br>
+  - :bulb: 陶渊明 • 桃花源记 </span><br>
+</p><p>25 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">故垒西边，人道<span style="color: #00e500; font-size:30px">是</span>，三国周郎赤壁。  </span><br>
+- 是：判断词，是。 </span><br>
+- 郎：古时对男子的美称。 </span><br>
+- 旧日营垒的西边，有人说是，三国时周瑜（大破曹军的）赤壁。 </span><br>
+  - :bulb: 苏轼 • 念奴娇·赤壁怀古 </span><br>
+--- </span><br>
+--- </span><br>
+</p><p>26 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">盘庚不为怨者故改其<span style="color: #00e500; font-size:30px">度</span>，<span style="color: #00e500; font-size:30px">度</span>义而后动，<span style="color: #00e500; font-size:30px">是</span>而不见可悔故也。  </span><br>
+- 度 dù：计划。 </span><br>
+- 度 duó：考虑，这里用作动词。 </span><br>
+- 义：形>合道义的；适宜的；公正合理的。 </span><br>
+- 而后：以后，然后。 </span><br>
+- 是：认为对。 </span><br>
+- 不见：看不出。 </span><br>
+- 而：那就。 </span><br>
+- 故：缘故。 </span><br>
+- 盘庚不因为有人怨恨的缘故就改变自己的计划；考虑到(迁都)合理，然后坚决行动，认为对就看不出有什么可后悔的缘故啊。 </span><br>
+  - :bulb: 玉安石 • 答司马谏议书 </span><br>
+--- </span><br>
+--- </span><br>
+</p><p>27 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">沛公今事有急，亡去不<span style="color: #00e500; font-size:30px">义</span>，不可不<span style="color: #00e500; font-size:30px">语</span>。  </span><br>
+- 义：形>合道义的；适宜的；公正合理的。 </span><br>
+- 语 <span style="color: #ff0097; font-size:35px">yù</span>：告诉。 </span><br>
+- 亡去：逃走离开。 </span><br>
+- 沛公现在有危急的事，（我）逃走离开是不合乎道义的，不能不告诉（他）。” </span><br>
+  - :bulb:  史记 • 鸿门宴 </span><br>
+--- </span><br>
+--- </span><br>
+</p><p>28 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">贫者<span style="color: #00e500; font-size:30px">语</span>于富者曰：“吾欲之南海，何如？”  </span><br>
+- 语 <span style="color: #ff0097; font-size:35px">yù</span>：对……说。 </span><br>
+- 之：往；至。 </span><br>
+- 穷人对富人说： “我打算到南海去，你看怎么样？” </span><br>
+  - :bulb: 彭端淑 • 为学 </span><br>
+--- </span><br>
+--- </span><br>
+</p><p>29 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">有偶<span style="color: #00e500; font-size:30px">语</span>诗书者，弃市。  </span><br>
+- 语 yǔ：谈论。 </span><br>
+- 偶：指两人相聚或幷立。 </span><br>
+- 偶语：相聚议论或窃窃私语。 </span><br>
+- 诗书：《诗经》和《尚书》。 </span><br>
+- 弃市：古代指在闹市执行死刑并陈尸街头。 </span><br>
+- 有相互谈论《诗》、《书》的，杀头并陈尸街头示众。 </span><br>
+  - :bulb: 史记 • 秦始皇本纪 </span><br>
+--- </span><br>
+--- </span><br>
+</p><p>30 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">天下敢有藏诗书、百家<span style="color: #00e500; font-size:30px">语</span>者，悉诣守、尉杂烧之。  </span><br>
+- 天下：四海之内，全中国。 </span><br>
+- 语 yǔ：著作。 </span><br>
+- 悉： 尽、全。 </span><br>
+- 诣 yì：前往；到。 </span><br>
+- 杂：通“集”。集合；聚集、集中。 </span><br>
+- 守、尉：郡守、县尉。 </span><br>
+- 全国胆敢有人私藏《诗》、《书》及诸子百家著作的，都送到郡县官府去集中烧掉。 </span><br>
+  - :bulb: 史记 • 秦始皇本纪 </span><br>
+--- </span><br>
+--- </span><br>
+</p><p>31 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">夜久<span style="color: #00e500; font-size:30px">语</span>声绝。  </span><br>
+- 夜久：夜深。 </span><br>
+- 语 yǔ：说话。 </span><br>
+- 绝：断绝、停止。 </span><br>
+- 夜深了，说话的声音听不到了。 </span><br>
+  - :bulb: 杜甫 • 石壕吏 </span><br>
+--- </span><br>
+--- </span><br>
+</p><p>32 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">来归相怨怒，但<span style="color: #00e500; font-size:30px">坐</span>观罗敷。  </span><br>
+- 回来大家相互埋怨，都是<span style="color: #00e500; font-size:30px">因为</span>看罗敷误了事。 </span><br>
+  - :bulb:  乐府诗集 · 陌上桑 </span><br>
+</p><p>33 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">满<span style="color: #00e500; font-size:30px">坐</span>寂然，无敢哗者。  </span><br>
+- 满<span style="color: #00e500; font-size:30px">座</span>静悄悄，没有一个敢高声谈笑。 </span><br>
+  - :flags:  哗：吵杂；喧闹。 </span><br>
+
+</p><p>34 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">律谓武曰：“副有罪，当<span style="color: #00e500; font-size:30px">相坐</span>。  </span><br>
+- 卫律对苏武说：副官如果有罪，主官你也应当受连坐之罪。 </span><br>
+- 相坐 ：指一个人犯了罪，有关的人连同治罪。 </span><br>
+  - :flags: 连坐：即古代法律规定，一个人犯罪，他的亲属或和他有关系的人一同受罚。 </span><br>
+</p><p>36 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">王曰：“何<span style="color: #00e500; font-size:30px">坐</span>！”曰：“<span style="color: #00e500; font-size:30px">坐</span>盗。”  </span><br>
+- 坐：犯……罪。 </span><br>
+- 楚王问：“犯了什么罪？”回答说：“犯盗窃罪。” </span><br>
+  - :flags: 盗，贼。“盗”和“贼”两字古代和现代的意义差不多相反：现代普通话所谓“贼”（偷东西的人），古代叫“盗”；现在所谓“强盗”（抢东西的人），古代也可以叫“盗”，但一般都称“贼”。 </span><br>
+
+</p><p>37 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">四人者：庐陵萧君圭君玉，长乐王回深<span style="font-family:KaiTi; font-size:30px; color: #00e500">父</span>，余弟安国平父、安上纯父。至和元年七月某日，临川王某记。</span>   </span><br>
+- 同游的四个人：庐陵人萧君圭，字君玉；长乐人王回，字深父；我的弟弟安国，字平父，安上，字纯父。至和元年七月某日，临川人王某记。 </span><br>
+- 者：语助，表提顿。 </span><br>
+- 四人者：(同游的)四个人。 </span><br>
+- 庐陵：今江西吉安。 </span><br>
+- 深父 `fǔ`：王回，字深父，北宋理学家。父，通“甫”，与下文“平父”“纯父”的“父”同。  </span><br>
+- 安国平父：王安国，字平父。安国、安上都是王安石的弟弟。 </span><br>
+- 王安石：(1021-1086)，北宋政治家、文学家、思想家。字介甫，抚州临川人，今江西省抚州市临川区。 </span><br>
+- 至和元年：公元1054年。至和，宋仁宗的年号。 </span><br>
+- 王某：王安石。古代作文起稿，写到自己的名字往往只作“某”，或“王某”,以后誊写时才把姓名写出。根据稿编的文集也常保留“某”的字样。 </span><br>
+    - 🎏 <span style='font-family: KaiTi; font-size: 22pt;'>誊</span> `ténɡ`：誊写，照底稿或原文抄写。 </span><br>
+  - 💡 游褒禅山记 • 王安石 </span><br>
+
+</p><p>38 <span style="font-family:KaiTi; font-size:30px; color: #d7003a">余于仆碑，又以悲夫古书之不存，后世之谬其传而莫能名者，何可胜道也哉！此所以学者不可以不深思而慎取之也。</span>  </span><br>
+- 我对于那座倒地的石碑，又因此感叹古籍的失传，后世讹传而无人弄清其真相的事，怎么能说得完呢？这就是今天治学的人（对所学的知识) 不可不深入地思考、谨慎地选取的缘故了。 </span><br>
+- 于：对于。 </span><br>
+- 仆碑：倒下的石碑。 </span><br>
+- 以：“以之”的省略。因此，由此。 </span><br>
+- 悲：悲伤，悲叹。 </span><br>
+- 夫：指示代词，那。 </span><br>
+- 之：取独。 </span><br>
+- 谬：弄错，使……错，动词。 </span><br>
+- 其：指古书。 </span><br>
+- 传：动作名，流传的文字。 </span><br>
+- 谬其传：即以讹传讹的意思。 </span><br>
+- 名，指识其本名，动词。 </span><br>
+- 莫能名：不能(正确地)叫出它的名称。 </span><br>
+- 者：的情况。 </span><br>
+- 名：指识其本名，动词。 </span><br>
+- 而：连词，表因果，因而。 </span><br>
+- 莫：不定代词，没有谁。 </span><br>
+- 名：名作动，说明白。 </span><br>
+- 者：者构，……的事情。 </span><br>
+- 何可胜道：哪能说得完。胜，尽。（旧读 shēng 现读`shèng`） </span><br>
+- 也哉：同义连用。 </span><br>
+- 也：语助，表感叹。 </span><br>
+- 哉：助，表感叹。 </span><br>
+- 而：表并列。 </span><br>
+- 此所以：这（就是）……的缘故。 </span><br>
+- 学者：治学的人；研究学问的人。 </span><br>
+- 慎取：谨慎地采取。 </span><br>
+- 之：代指流传下来的东西。 </span><br>
+  - 💡 游褒禅山记 • 王安石 </span><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br>
+
+
+
+
+
+
+  
+            
+  
+   <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const tocList = document.getElementById("toc-list");
+            const headers = document.querySelectorAll("h2");
+
+            headers.forEach((header, index) => {
+                const id = "section" + (index + 1);
+                header.setAttribute("id", id);
+
+                const li = document.createElement("li");
+                const a = document.createElement("a");
+                a.setAttribute("href", "#" + id);
+                a.textContent = header.textContent;
+
+                li.appendChild(a);
+                tocList.appendChild(li);
+            });
+        });
+    </script>
+</body>
+</html>
+
