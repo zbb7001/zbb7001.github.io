@@ -1,4 +1,4 @@
-# 🌚  葩葩🔭思 :link: https://bk.z07.us.kg 
+# 🌚  葩葩🔭思 :link: https://bk.zcr6.ggff.net/tag.html
 ### :page_facing_up: [14](https://bk.zcr6.ggff.net/tag.html) 
 ### :speech_balloon: 0 
 ### :hibiscus: 318895 
