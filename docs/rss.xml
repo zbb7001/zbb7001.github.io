@@ -1,39 +1,95 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>葩葩思的博客</title><link>https://zbb7001.github.io/z.github.io</link><description>爱亲者不敢恶於人，敬亲者不敢慢於人。</description><copyright>葩葩思的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/101622397?v=4</url><title>avatar</title><link>https://zbb7001.github.io/z.github.io</link></image><lastBuildDate>Fri, 19 Jul 2024 08:56:17 +0000</lastBuildDate><managingEditor>葩葩思的博客</managingEditor><ttl>60</ttl><webMaster>葩葩思的博客</webMaster><item><title>03虚词　且</title><link>https://zbb7001.github.io/z.github.io/post/03-xu-ci-%E3%80%80-qie.html</link><description># 01 &lt;span style='font-family:KaiTi; font-size:30px; color: #d7003a'&gt;有怠而欲出者，曰：不出，火&lt;span style='font-family:KaiTi; font-size:30px; color: #00e500'&gt;且&lt;/span&gt;尽。</description><guid isPermaLink="true">https://zbb7001.github.io/z.github.io/post/03-xu-ci-%E3%80%80-qie.html</guid><pubDate>Wed, 17 Jul 2024 07:59:45 +0000</pubDate></item><item><title>02虚词　其</title><link>https://zbb7001.github.io/z.github.io/post/02-xu-ci-%E3%80%80-qi.html</link><description># 01 &lt;span style='font-family:KaiTi;font-size:27px;color: #d7003a'&gt;爱&lt;span style='font-family:KaiTi; font-size:30px; color: #00e500'&gt;其&lt;/span&gt;子，择师而教之；于&lt;span style='font-family:KaiTi; font-size:30px; color: #ec6800'&gt;其&lt;/span&gt;身也，则耻师焉，惑矣。</description><guid isPermaLink="true">https://zbb7001.github.io/z.github.io/post/02-xu-ci-%E3%80%80-qi.html</guid><pubDate>Wed, 17 Jul 2024 07:45:55 +0000</pubDate></item><item><title>01虚词　而</title><link>https://zbb7001.github.io/z.github.io/post/01-xu-ci-%E3%80%80-er.html</link><description># 01 &lt;span style='font-family:KaiTi;font-size:27px;color: #d7003a'&gt;故夫&lt;span style='font-family:KaiTi; font-size:30px; color: #005243'&gt;知&lt;/span&gt;效一官，&lt;span style='font-family:KaiTi; font-size:30px; color: #005243'&gt;行&lt;/span&gt;比一乡，&lt;span style='font-family:KaiTi; font-size:30px; color: #005243'&gt;德&lt;/span&gt;合一君，&lt;span style='font-family:KaiTi; font-size:30px; color: #ec6800'&gt;而&lt;/span&gt;征一国者，其自视也亦若此矣。</description><guid isPermaLink="true">https://zbb7001.github.io/z.github.io/post/01-xu-ci-%E3%80%80-er.html</guid><pubDate>Wed, 17 Jul 2024 07:45:08 +0000</pubDate></item><item><title>实词01</title><link>https://zbb7001.github.io/z.github.io/post/shi-ci-01.html</link><description># 01 &lt;span style='color: #ff7f7f; font-size:22px'&gt;度&lt;/span&gt;我至军中，公乃入。</description><guid isPermaLink="true">https://zbb7001.github.io/z.github.io/post/shi-ci-01.html</guid><pubDate>Wed, 17 Jul 2024 07:44:18 +0000</pubDate></item><item><title>成语10</title><link>https://zbb7001.github.io/z.github.io/post/cheng-yu-10.html</link><description># 01 &lt;span style='font-family:KaiTi; font-size:30px; color: #d7003a'&gt;虚与&lt;span style='font-family:KaiTi; font-size:30px; color: #00e500'&gt;委&lt;/span&gt;&lt;span style='font-family:KaiTi; font-size:30px; color: #44cef6'&gt;蛇&lt;/span&gt;&lt;/span&gt; [^001]&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>葩葩思的博客</title><link>https://zbb7001.github.io</link><description>爱亲者不敢恶於人，敬亲者不敢慢於人。</description><copyright>葩葩思的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/101622397?v=4</url><title>avatar</title><link>https://zbb7001.github.io</link></image><lastBuildDate>Sat, 19 Apr 2025 04:38:03 +0000</lastBuildDate><managingEditor>葩葩思的博客</managingEditor><ttl>60</ttl><webMaster>葩葩思的博客</webMaster><item><title>Tool2</title><link>https://zbb7001.github.io/post/Tool2.html</link><description>kkh。</description><guid isPermaLink="true">https://zbb7001.github.io/post/Tool2.html</guid><pubDate>Mon, 27 Jan 2025 11:44:01 +0000</pubDate></item><item><title>Tools</title><link>https://zbb7001.github.io/post/Tools.html</link><description>abc。</description><guid isPermaLink="true">https://zbb7001.github.io/post/Tools.html</guid><pubDate>Mon, 27 Jan 2025 11:11:49 +0000</pubDate></item><item><title>about</title><link>https://zbb7001.github.io/post/about.html</link><description>## 2803:f800:51::/48
+
+https://www.lddgo.net/network/randomip
+
+## IPV6地址
+
+https://www.wetest.vip/page/cloudflare/address_v6.html
+
+## 优选IP
+
+https://cf.090227.xyz/
+
+## 全球主机监控节点
+
+https://stock.hostmonit.com/CloudFlareYesV6
+
+## bestcf.txt
+
+https://github.com/ymyuuu/IPDB/blob/main/bestcf.txt
+
+
+
+
+
+
+
+## ipchaxun
+
+https://ipchaxun.com/104.21.92.198/
+
+## 获取 Tor 网桥
+
+https://bridges.torproject.org/
+
+## Replit
+
+https://replit.com/@zcr071225/warp-key-generator
+
+## CFnat
+
+https://github.com/cmliu/CFnat-Windows-GUI
+
+
+
+
+
+
+
+。</description><guid isPermaLink="true">https://zbb7001.github.io/post/about.html</guid><pubDate>Sun, 26 Jan 2025 15:42:41 +0000</pubDate></item><item><title>03虚词　且</title><link>https://zbb7001.github.io/post/03-xu-ci-%E3%80%80-qie.html</link><description># 01 &lt;span style='font-family:KaiTi; font-size:30px; color: #d7003a'&gt;有怠而欲出者，曰：不出，火&lt;span style='font-family:KaiTi; font-size:30px; color: #00e500'&gt;且&lt;/span&gt;尽。</description><guid isPermaLink="true">https://zbb7001.github.io/post/03-xu-ci-%E3%80%80-qie.html</guid><pubDate>Wed, 17 Jul 2024 07:59:45 +0000</pubDate></item><item><title>02虚词　其</title><link>https://zbb7001.github.io/post/02-xu-ci-%E3%80%80-qi.html</link><description># 01 &lt;span style='font-family:KaiTi;font-size:27px;color: #d7003a'&gt;爱&lt;span style='font-family:KaiTi; font-size:30px; color: #00e500'&gt;其&lt;/span&gt;子，择师而教之；于&lt;span style='font-family:KaiTi; font-size:30px; color: #ec6800'&gt;其&lt;/span&gt;身也，则耻师焉，惑矣。</description><guid isPermaLink="true">https://zbb7001.github.io/post/02-xu-ci-%E3%80%80-qi.html</guid><pubDate>Wed, 17 Jul 2024 07:45:55 +0000</pubDate></item><item><title>01虚词　而</title><link>https://zbb7001.github.io/post/01-xu-ci-%E3%80%80-er.html</link><description># 01 &lt;span style='font-family:KaiTi;font-size:27px;color: #d7003a'&gt;故夫&lt;span style='font-family:KaiTi; font-size:30px; color: #005243'&gt;知&lt;/span&gt;效一官，&lt;span style='font-family:KaiTi; font-size:30px; color: #005243'&gt;行&lt;/span&gt;比一乡，&lt;span style='font-family:KaiTi; font-size:30px; color: #005243'&gt;德&lt;/span&gt;合一君，&lt;span style='font-family:KaiTi; font-size:30px; color: #ec6800'&gt;而&lt;/span&gt;征一国者，其自视也亦若此矣。</description><guid isPermaLink="true">https://zbb7001.github.io/post/01-xu-ci-%E3%80%80-er.html</guid><pubDate>Wed, 17 Jul 2024 07:45:08 +0000</pubDate></item><item><title>实词01</title><link>https://zbb7001.github.io/post/shi-ci-01.html</link><description># 01 &lt;span style='color: #ff7f7f; font-size:22px'&gt;度&lt;/span&gt;我至军中，公乃入。</description><guid isPermaLink="true">https://zbb7001.github.io/post/shi-ci-01.html</guid><pubDate>Wed, 17 Jul 2024 07:44:18 +0000</pubDate></item><item><title>成语10</title><link>https://zbb7001.github.io/post/cheng-yu-10.html</link><description># 01 &lt;span style='font-family:KaiTi; font-size:30px; color: #d7003a'&gt;虚与&lt;span style='font-family:KaiTi; font-size:30px; color: #00e500'&gt;委&lt;/span&gt;&lt;span style='font-family:KaiTi; font-size:30px; color: #44cef6'&gt;蛇&lt;/span&gt;&lt;/span&gt; [^001]&#13;
 - .xū yǔ &lt;span style='color: #00e500; font-size:18px'&gt;wēi&lt;/span&gt; &lt;span style='color: #ec6800; font-size:18px'&gt;yí&lt;/span&gt;&#13;
- - [ ] &lt;span style='color: #4c221b'&gt;确定已经掌握了请打上对勾！&lt;/span&gt;&#13;
-- 虚：假意；不真实。</description><guid isPermaLink="true">https://zbb7001.github.io/z.github.io/post/cheng-yu-10.html</guid><pubDate>Wed, 17 Jul 2024 07:41:38 +0000</pubDate></item><item><title>成语09</title><link>https://zbb7001.github.io/z.github.io/post/cheng-yu-09.html</link><description># 01 &lt;span style='font-family:KaiTi; font-size:30px; color: #d7003a'&gt;&lt;span style='font-family:KaiTi; font-size:30px; color: #00e500'&gt;为&lt;/span&gt;虎添翼&lt;/span&gt; 👈️ [^001] &#13;
+    - [ ] &lt;span style='color: #4c221b'&gt;确定已经掌握了请打上对勾！&lt;/span&gt;&#13;
+- 虚：假意；不真实。</description><guid isPermaLink="true">https://zbb7001.github.io/post/cheng-yu-10.html</guid><pubDate>Wed, 17 Jul 2024 07:41:38 +0000</pubDate></item><item><title>成语09</title><link>https://zbb7001.github.io/post/cheng-yu-09.html</link><description># 01 &lt;span style='font-family:KaiTi; font-size:30px; color: #d7003a'&gt;&lt;span style='font-family:KaiTi; font-size:30px; color: #00e500'&gt;为&lt;/span&gt;虎添翼&lt;/span&gt; 👈️ [^001] &#13;
 - wèi hǔ tiān yì&#13;
-- - [ ] &lt;span style='color: #4c221b'&gt;确定已经掌握了请打上对勾！&lt;/span&gt;&#13;
+    - [ ] &lt;span style='color: #4c221b'&gt;确定已经掌握了请打上对勾！&lt;/span&gt;&#13;
+&#13;
 - &lt;table&gt;&lt;td bgcolor=#75664d&gt;&lt;font size = '4'&gt;为虎傅翼&lt;/font&gt;&lt;td bgcolor=#000000&gt;1&lt;/table&gt;&#13;
-- 为：给，替。</description><guid isPermaLink="true">https://zbb7001.github.io/z.github.io/post/cheng-yu-09.html</guid><pubDate>Wed, 17 Jul 2024 07:41:05 +0000</pubDate></item><item><title>成语08</title><link>https://zbb7001.github.io/z.github.io/post/cheng-yu-08.html</link><description># 01 &lt;span style='font-family:KaiTi; font-size:30px; color: #d7003a'&gt;歪打正&lt;span style='font-family:KaiTi; font-size:30px; color: #00e500'&gt;着&lt;/span&gt; 👈 [^001]&#13;
+&#13;
+- 为：给，替。</description><guid isPermaLink="true">https://zbb7001.github.io/post/cheng-yu-09.html</guid><pubDate>Wed, 17 Jul 2024 07:41:05 +0000</pubDate></item><item><title>成语08</title><link>https://zbb7001.github.io/post/cheng-yu-08.html</link><description># 01 &lt;span style='font-family:KaiTi; font-size:30px; color: #d7003a'&gt;歪打正&lt;span style='font-family:KaiTi; font-size:30px; color: #00e500'&gt;着&lt;/span&gt; 👈 [^001]&#13;
 - .wāi dǎ zhèng zháo &#13;
- - [ ] &lt;span style='color: #4c221b'&gt;确定已经掌握了请打上对勾！&lt;/span&gt;&#13;
-- 歪：不恰当的；不正确的。</description><guid isPermaLink="true">https://zbb7001.github.io/z.github.io/post/cheng-yu-08.html</guid><pubDate>Wed, 17 Jul 2024 07:40:32 +0000</pubDate></item><item><title>成语07</title><link>https://zbb7001.github.io/z.github.io/post/cheng-yu-07.html</link><description># 01 &lt;span style='font-family:KaiTi; font-size:30px; color: #d7003a'&gt;言归正传 &lt;/span&gt; [^001]&#13;
+    - [ ] &lt;span style='color: #4c221b'&gt;确定已经掌握了请打上对勾！&lt;/span&gt;&#13;
+- 歪：不恰当的；不正确的。</description><guid isPermaLink="true">https://zbb7001.github.io/post/cheng-yu-08.html</guid><pubDate>Wed, 17 Jul 2024 07:40:32 +0000</pubDate></item><item><title>成语07</title><link>https://zbb7001.github.io/post/cheng-yu-07.html</link><description># 01 &lt;span style='font-family:KaiTi; font-size:30px; color: #d7003a'&gt;言归正传 &lt;/span&gt; [^001]&#13;
 - .yán guī zhèng zhuàn&#13;
- - [ ] &lt;span style='color: #4c221b'&gt;确定已经掌握了请打上对勾！&lt;/span&gt;&#13;
-- 言：所说的话，话头。</description><guid isPermaLink="true">https://zbb7001.github.io/z.github.io/post/cheng-yu-07.html</guid><pubDate>Wed, 17 Jul 2024 07:40:00 +0000</pubDate></item><item><title>成语06</title><link>https://zbb7001.github.io/z.github.io/post/cheng-yu-06.html</link><description># 01 &lt;span style='font-family:KaiTi; font-size:30px; color: #d7003a'&gt;大谬不然&lt;/span&gt; [^001]&#13;
+    - [ ] &lt;span style='color: #4c221b'&gt;确定已经掌握了请打上对勾！&lt;/span&gt;&#13;
+- 言：所说的话，话头。</description><guid isPermaLink="true">https://zbb7001.github.io/post/cheng-yu-07.html</guid><pubDate>Wed, 17 Jul 2024 07:40:00 +0000</pubDate></item><item><title>成语06</title><link>https://zbb7001.github.io/post/cheng-yu-06.html</link><description># 01 &lt;span style='font-family:KaiTi; font-size:30px; color: #d7003a'&gt;大谬不然&lt;/span&gt; [^001]&#13;
 - . dà miù bù rán&#13;
- - [ ] &lt;span style='color: #4c221b'&gt;确定已经掌握了请打上对勾！&lt;/span&gt;&#13;
+    - [ ] &lt;span style='color: #4c221b'&gt;确定已经掌握了请打上对勾！&lt;/span&gt;&#13;
 - 谬：荒谬，错误；&#13;
-- 然：如此，这样。</description><guid isPermaLink="true">https://zbb7001.github.io/z.github.io/post/cheng-yu-06.html</guid><pubDate>Wed, 17 Jul 2024 07:39:28 +0000</pubDate></item><item><title>成语05</title><link>https://zbb7001.github.io/z.github.io/post/cheng-yu-05.html</link><description># 01 &lt;span style='font-family:KaiTi; font-size:30px; color: #d7003a'&gt;金兰之好&lt;/span&gt; [^001]&#13;
+- 然：如此，这样。</description><guid isPermaLink="true">https://zbb7001.github.io/post/cheng-yu-06.html</guid><pubDate>Wed, 17 Jul 2024 07:39:28 +0000</pubDate></item><item><title>成语05</title><link>https://zbb7001.github.io/post/cheng-yu-05.html</link><description># 01 &lt;span style='font-family:KaiTi; font-size:30px; color: #d7003a'&gt;金兰之好&lt;/span&gt; [^001]&#13;
 - .jīn lán zhī hă&#13;
- - [ ] &lt;span style='color: #4c221b'&gt;确定已经掌握了请打上对勾！&lt;/span&gt;&#13;
+    - [ ] &lt;span style='color: #4c221b'&gt;确定已经掌握了请打上对勾！&lt;/span&gt;&#13;
+&#13;
 - &lt;table&gt;&lt;td bgcolor=#22663a&gt;&lt;font size = '4'&gt;义结金兰 金兰之交 金兰之谊&lt;/font&gt;&lt;td bgcolor=#000000&gt;1&lt;/table&gt;&#13;
+&#13;
 - &lt;table&gt;&lt;td bgcolor=#771c12&gt;&lt;font size = '4'&gt;金兰之契 金兰之友 金兰契友&lt;/font&gt;&lt;td bgcolor=#000000&gt;6&lt;/table&gt;&#13;
-- 金兰：指稳固深厚的友情；也借指结拜的兄弟姐妹。</description><guid isPermaLink="true">https://zbb7001.github.io/z.github.io/post/cheng-yu-05.html</guid><pubDate>Wed, 17 Jul 2024 07:38:50 +0000</pubDate></item><item><title>成语04</title><link>https://zbb7001.github.io/z.github.io/post/cheng-yu-04.html</link><description># 01 &lt;span style='font-family:KaiTi; font-size:30px; color: #d7003a'&gt;居安思危&lt;/span&gt; [^001]&#13;
+&#13;
+- 金兰：指稳固深厚的友情；也借指结拜的兄弟姐妹。</description><guid isPermaLink="true">https://zbb7001.github.io/post/cheng-yu-05.html</guid><pubDate>Wed, 17 Jul 2024 07:38:50 +0000</pubDate></item><item><title>成语04</title><link>https://zbb7001.github.io/post/cheng-yu-04.html</link><description># 01 &lt;span style='font-family:KaiTi; font-size:30px; color: #d7003a'&gt;居安思危&lt;/span&gt; [^001]&#13;
 - . jū ān sī wēi &#13;
- - [ ] &lt;span style='color: #4c221b'&gt;确定已经掌握了请打上对勾！&lt;/span&gt;&#13;
-- 居：处于。</description><guid isPermaLink="true">https://zbb7001.github.io/z.github.io/post/cheng-yu-04.html</guid><pubDate>Wed, 17 Jul 2024 07:38:12 +0000</pubDate></item><item><title>成语03</title><link>https://zbb7001.github.io/z.github.io/post/cheng-yu-03.html</link><description># 01 &lt;span style='font-family:KaiTi; font-size:30px; color: #d7003a'&gt;蠢蠢欲动&lt;/span&gt; [^001]&#13;
+    - [ ] &lt;span style='color: #4c221b'&gt;确定已经掌握了请打上对勾！&lt;/span&gt;&#13;
+- 居：处于。</description><guid isPermaLink="true">https://zbb7001.github.io/post/cheng-yu-04.html</guid><pubDate>Wed, 17 Jul 2024 07:38:12 +0000</pubDate></item><item><title>成语03</title><link>https://zbb7001.github.io/post/cheng-yu-03.html</link><description># 01 &lt;span style='font-family:KaiTi; font-size:30px; color: #d7003a'&gt;蠢蠢欲动&lt;/span&gt; [^001]&#13;
 - .chǔn chǔn yù dòng &#13;
- - [ ] &lt;span style='color: #4c221b'&gt;确定已经掌握了请打上对勾！&lt;/span&gt;&#13;
+    - [ ] &lt;span style='color: #4c221b'&gt;确定已经掌握了请打上对勾！&lt;/span&gt;&#13;
 - 可理解为　欲蠢动&#13;
-- 蠢蠢：蠢动的样子。</description><guid isPermaLink="true">https://zbb7001.github.io/z.github.io/post/cheng-yu-03.html</guid><pubDate>Wed, 17 Jul 2024 07:37:36 +0000</pubDate></item><item><title>成语02</title><link>https://zbb7001.github.io/z.github.io/post/cheng-yu-02.html</link><description># 01 &lt;span style='font-family:KaiTi; font-size:30px; color: #d7003a'&gt;析骸而&lt;span style='font-family:KaiTi; font-size:30px; color: #00e500'&gt;爨&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; [^001]&#13;
+- 蠢蠢：蠢动的样子。</description><guid isPermaLink="true">https://zbb7001.github.io/post/cheng-yu-03.html</guid><pubDate>Wed, 17 Jul 2024 07:37:36 +0000</pubDate></item><item><title>成语02</title><link>https://zbb7001.github.io/post/cheng-yu-02.html</link><description># 01 &lt;span style='font-family:KaiTi; font-size:30px; color: #d7003a'&gt;析骸而&lt;span style='font-family:KaiTi; font-size:30px; color: #00e500'&gt;爨&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; [^001]&#13;
 - xī hái ér cuàn&#13;
- - [ ] &lt;span style='color: #4c221b'&gt;确定已经掌握了请打上对勾！&lt;/span&gt;&#13;
+   - [ ] &lt;span style='color: #4c221b'&gt;确定已经掌握了请打上对勾！&lt;/span&gt;&#13;
+&#13;
 - &lt;table&gt;&lt;td bgcolor=#ff461f&gt;&lt;font size = '4'&gt;析骸以爨&lt;/font&gt;&lt;td bgcolor=#000000&gt;1&lt;/table&gt;&#13;
+&#13;
 - &lt;table&gt;&lt;td bgcolor=#b61aae&gt;&lt;font size = '4'&gt;析骨而炊&lt;/font&gt;&lt;td bgcolor=#000000&gt;1&lt;/table&gt;&#13;
-- 析：劈开；分开。</description><guid isPermaLink="true">https://zbb7001.github.io/z.github.io/post/cheng-yu-02.html</guid><pubDate>Wed, 17 Jul 2024 07:36:29 +0000</pubDate></item><item><title>成语01</title><link>https://zbb7001.github.io/z.github.io/post/cheng-yu-01.html</link><description># 01 &lt;span style='font-family:KaiTi; font-size:30px; color: #d7003a'&gt;物是人非&lt;/span&gt; [^001]&#13;
+&#13;
+- 析：劈开；分开。</description><guid isPermaLink="true">https://zbb7001.github.io/post/cheng-yu-02.html</guid><pubDate>Wed, 17 Jul 2024 07:36:29 +0000</pubDate></item><item><title>成语01</title><link>https://zbb7001.github.io/post/cheng-yu-01.html</link><description># 01 &lt;span style='font-family:KaiTi; font-size:30px; color: #d7003a'&gt;物是人非&lt;/span&gt; [^001]&#13;
 - .wù shì rén fēi&#13;
- - [ ] &lt;span style='color: #4c221b'&gt;已掌握请打上对勾！&lt;/span&gt;&#13;
-- 物：景物。</description><guid isPermaLink="true">https://zbb7001.github.io/z.github.io/post/cheng-yu-01.html</guid><pubDate>Wed, 17 Jul 2024 07:35:33 +0000</pubDate></item></channel></rss>
+    - [ ] &lt;span style='color: #4c221b'&gt;已掌握请打上对勾！&lt;/span&gt;&#13;
+- 物：景物。</description><guid isPermaLink="true">https://zbb7001.github.io/post/cheng-yu-01.html</guid><pubDate>Wed, 17 Jul 2024 07:35:33 +0000</pubDate></item></channel></rss>
